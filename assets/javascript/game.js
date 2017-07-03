@@ -81,7 +81,9 @@ $("#btnReset").on("click", function() {
     wins = 0;
     looses = 0;
     totalScore = 0;
+    randNum = 10 + Math.floor(Math.random() * 21);
     $("#wins").html("Wins: " + wins);
     $("#looses").html("Looses: " + looses);
     $("#totalScore").html(totalScore);
+    $(".output1").html("Random Number:" + "<br><br>" + randNum);
 });
